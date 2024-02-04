@@ -1,3 +1,19 @@
+.center-div {
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+height: 100px;
+}
+.center-button {
+display: inline-block;
+text-align: center;
+align-items: center;
+justify-content: center;
+height: 100px;
+margin-right: auto;
+margin-left: auto;
+}
 .column{
 align-items: center;
  justify-content: center;
