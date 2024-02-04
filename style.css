@@ -1,0 +1,83 @@
+.column{
+align-items: center;
+ justify-content: center;
+width:50%;
+padding: 5px;
+height: 300px;
+}
+.row:after {
+content:"";
+display:table;
+clear: both;
+}
+
+.cont {
+  display:inline-block;
+  position:relative;
+  width:180px;
+  height:75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  background: #450012;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  margin-bottom:5px;
+
+}
+
+.Btn-1 {
+  width: 170px;
+  height: 65px;
+  border: none;
+  outline: 4px solid #450012;
+  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  
+
+}
+.Btn-1::after {
+  content: attr(data-text);
+  color: #ffd277;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 90%;
+  transition-duration: 1s;
+  background-color: #450012;
+  background-size: 200%;
+  font-size: 20px;
+  font-family: 'Allura', cursive;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+
+  
+}
+
+.Btn-1:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn-1:hover::after {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn-1:active {
+  transform: scale(0.95);
+}
